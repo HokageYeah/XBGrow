@@ -1,0 +1,44 @@
+// 定义混合
+@mixin normalFlex ($direction: row, $justify:space-between, $align: center) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+// 定义全局背景
+@mixin normalContainer {
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; /* 设置宽度为屏幕宽度 */
+  min-height: 100%; /* 设置最小高度为屏幕高度 */
+  background-color: #f9f9f9;
+}
+
+/*每个页面公共css */
+/* 解决小程序和app滚动条的问题 */
+/* #ifdef MP-WEIXIN || APP-PLUS */
+::-webkit-scrollbar {
+  display: none;
+  width: 0 !important;
+  height: 0 !important;
+  -webkit-appearance: none;
+  background: transparent;
+  color: transparent;
+}
+/* #endif */
+
+/* 解决H5 的问题 */
+/* #ifdef H5 */
+uni-scroll-view .uni-scroll-view::-webkit-scrollbar {
+  /* 隐藏滚动条，但依旧具备可以滚动的功能 */
+  display: none;
+  width: 0 !important;
+  height: 0 !important;
+  -webkit-appearance: none;
+  background: transparent;
+  color: transparent;
+}
+/* #endif */

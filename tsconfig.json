@@ -1,0 +1,27 @@
+{
+  // "extends": "@vue/tsconfig/tsconfig.json",
+  "compilerOptions": {
+    "noImplicitAny": true, /* 不允许隐式的any类型 */
+    "sourceMap": true,
+    "baseUrl": ".",
+    "target": "esnext", /* 目标语言的版本 */
+    "strict": true,
+    "useDefineForClassFields": true, /* 发出符合 ECMAScript 标准的类字段 */
+    "module": "esnext", /* 生成代码的模板标准 */
+    "moduleResolution": "node", /* 模块解析策略，ts默认用node的解析策略，即相对的方式导入 */
+    "jsx": "preserve", /* 指定生成什么 JSX 代码 */
+    "resolveJsonModule": true, /* 启用导入 .json 文件 */
+    "esModuleInterop": true, /* 允许export=导出，由import from 导入 */
+    "paths": { /* 路径映射，相对于baseUrl */
+      "@/*": ["./src/*"]
+    },
+    "lib": ["esnext", "dom"],
+    "types": ["@dcloudio/types", "pinia-plugin-persist-uni", "@uni-helper/uni-app-types", "@uni-helper/uni-ui-types","node"]
+  },
+  "exclude": ["node_modules", "dist"],
+  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue", "src/uni-module-common/utils/permission.js"],
+  // 加入配置，将标签视为原始组件
+   "vueCompilerOptions": {
+    "nativeTags": ["block", "component", "template", "slot"]
+  },
+}

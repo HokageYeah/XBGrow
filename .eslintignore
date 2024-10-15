@@ -1,0 +1,21 @@
+# eslint 忽略检查
+node_modules
+dist
+/src/components/common/*
+/src/components/thorui/*
+/src/uni_modules/lime-signature/*
+/src/uni_modules/lime-shared/*
+/src/uni_modules/lime-shrink/*
+# /src/uni_modules/*
+/src/static/*
+/src/style/*
+/src/uni.scss
+*.css
+*.less
+*.scss
+*.jpg
+*.png
+*.gif
+*.svg
+*.html
+*.d.ts

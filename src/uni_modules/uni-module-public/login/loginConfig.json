@@ -1,0 +1,187 @@
+{
+  "szjx": {
+    "logoImg": "/nb/m/uni-notice/img/szjx_logo.png",
+    "title": "数智家校登录",
+    "subTitle": "数字赋能教育 智慧引领未来",
+    "privacy": [
+      {
+        "title": "《用户协议》",
+        "url": "https://m.xxt.cn/v2/protocol/xxt-user?unimpParams=1"
+      },
+      {
+        "title": "《用户隐私保护政策》",
+        "url": "https://m.xxt.cn/v2/protocol/zx-read-privacy?unimpParams=1"
+      },
+      {
+        "title": "《儿童隐私保护政策》",
+        "url": "https://m.xxt.cn/privacy-policy/xxt-children-policy.htm?unimpParams=1"
+      }
+    ],
+    "authorInfo": {
+      "logoImg": "/nb/m/uni-login/img/szjx_login_logo.png",
+      "authorizeDescribe": "数智家校小程序仅针对学校用户使用，为了方便您更好体验产品，请授权常用联系方式",
+      "infoAry": [
+        {
+          "title": "智慧校园",
+          "subTitle": "考勤、请假、话机、宿管、访客、储物柜、智慧体育"
+        },
+        {
+          "title": "家校互动",
+          "subTitle": "通知、作业、成绩、打卡、班级圈、班级相册"
+        },
+        {
+          "title": "学习资源",
+          "subTitle": "课文朗读、诗词、在线测评、天天练、英语读测评"
+        }
+      ]
+    }
+  },
+  "xzx-reading": {
+    "logoImg": "/nb/m/uni-notice/img/szjx_logo.png",
+    "title": "朗读登录",
+    "subTitle": "我爱朗读 智领未来",
+    "privacy": [
+      {
+        "title": "《用户协议》",
+        "url": "https://m.xxt.cn/v2/protocol/xxt-user?unimpParams=1"
+      },
+      {
+        "title": "《用户隐私保护政策》",
+        "url": "https://m.xxt.cn/v2/protocol/zx-read-privacy?unimpParams=1"
+      },
+      {
+        "title": "《儿童隐私保护政策》",
+        "url": "https://m.xxt.cn/privacy-policy/xxt-children-policy.htm?unimpParams=1"
+      }
+    ],
+    "authorInfo": {
+      "logoImg": "/nb/m/uni-login/img/szjx_login_logo.png",
+      "authorizeDescribe": "数智家校小程序仅针对学校用户使用，为了方便您更好体验产品，请授权常用联系方式",
+      "infoAry": [
+        {
+          "title": "智慧校园",
+          "subTitle": "考勤、请假、话机、宿管、访客、储物柜、智慧体育"
+        },
+        {
+          "title": "家校互动",
+          "subTitle": "通知、作业、成绩、打卡、班级圈、班级相册"
+        },
+        {
+          "title": "学习资源",
+          "subTitle": "课文朗读、诗词、在线测评、天天练、英语读测评"
+        }
+      ]
+    }
+  },
+  "xxt": {
+    "logoImg": "/nb/m/base/img/logo.jpg",
+    "title": "河南校讯通",
+    "subTitle": "为家校互动架桥 为教育信息化助力",
+    "privacy": [
+      {
+        "title": "《用户协议》",
+        "url": "https://m.xxt.cn/v2/protocol/xxt-user?unimpParams=1"
+      },
+      {
+        "title": "《用户隐私保护政策》",
+        "url": "https://m.xxt.cn/v2/protocol/zx-read-privacy?unimpParams=1"
+      },
+      {
+        "title": "《儿童隐私保护政策》",
+        "url": "https://m.xxt.cn/privacy-policy/xxt-children-policy.htm?unimpParams=1"
+      }
+    ],
+    "authorInfo": {
+      "logoImg": "/nb/m/uni-login/img/xxt_login_logo.png",
+      "authorizeDescribe": "河南校讯通小程序仅针对学校用户使用，为了方便您更好体验产品，请授权常用联系方式",
+      "infoAry": [
+        {
+          "title": "智慧校园",
+          "subTitle": "考勤、请假、话机、宿管、访客、储物柜、智慧体育"
+        },
+        {
+          "title": "家校互动",
+          "subTitle": "通知、作业、成绩、打卡、班级圈、班级相册"
+        },
+        {
+          "title": "学习资源",
+          "subTitle": "课文朗读、诗词、在线测评、天天练、英语读测评"
+        }
+      ]
+    }
+  },
+  "xxt-income": {
+    "logoImg": "/nb/m/uni-income/img/xxt-income-logo.png",
+    "title": "校讯通迎新",
+    "subTitle": "",
+    "privacy": [
+      {
+        "title": "《用户协议》",
+        "url": "https://m.xxt.cn/v2/protocol/xxt-user?unimpParams=1"
+      },
+      {
+        "title": "《用户隐私保护政策》",
+        "url": "https://m.xxt.cn/v2/protocol/zx-read-privacy?unimpParams=1"
+      },
+      {
+        "title": "《儿童隐私保护政策》",
+        "url": "https://m.xxt.cn/privacy-policy/xxt-children-policy.htm?unimpParams=1"
+      }
+    ],
+    "authorInfo": {
+      "logoImg": "/nb/m/uni-login/img/szjx_login_logo.png",
+      "authorizeDescribe": "数智家校小程序仅针对学校用户使用，为了方便您更好体验产品，请授权常用联系方式",
+      "infoAry": [
+        {
+          "title": "智慧校园",
+          "subTitle": "考勤、请假、话机、宿管、访客、储物柜、智慧体育"
+        },
+        {
+          "title": "家校互动",
+          "subTitle": "通知、作业、成绩、打卡、班级圈、班级相册"
+        },
+        {
+          "title": "学习资源",
+          "subTitle": "课文朗读、诗词、在线测评、天天练、英语读测评"
+        }
+      ]
+    }
+  },
+  "zhyd": {
+    "logoImg": "/nb/m/uni-zhyd/img/zhyd_logo.png",
+    "title": "众享智阅登录",
+    "subTitle": "阅读，让改变发生",
+    "privacy": [
+      {
+        "title": "《用户协议》",
+        "url": "https://m.xxt.cn/v2/protocol/xxt-user?unimpParams=1"
+      },
+      {
+        "title": "《用户隐私保护政策》",
+        "url": "https://m.xxt.cn/v2/protocol/zx-read-privacy?unimpParams=1"
+      },
+      {
+        "title": "《儿童隐私保护政策》",
+        "url": "https://m.xxt.cn/privacy-policy/xxt-children-policy.htm?unimpParams=1"
+      }
+    ],
+    "authorInfo": {
+      "logoImg": "/nb/m/uni-login/img/new_1_zhyd_login_logo.png",
+      "authorizeDescribe": "众享智阅小程序仅针对学校用户使用，为了方便您更好体验产品，请授权常用联系方式",
+      "infoAry": [
+        {
+          "title": "图书管理",
+          "subTitle": "查询图书、在线借书、扫码还书、图书漂流"
+        },
+        {
+          "title": "阅读打卡",
+          "subTitle": "布置任务、阅读打卡、进度记录"
+        },
+        {
+          "title": "阅读测评",
+          "subTitle": "书籍测评、在线答题、知识巩固"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,128 @@
+{
+  "subPackages": {
+    "root": "uni_modules/uni-module-public",
+    "name": "xxtUniModulePublic",
+    "pages": [
+      {
+        "path": "login/login",
+        "name": "login",
+        "aliasPath": "/",
+        "style": {
+          "navigationBarTitleText": "登录",
+          "navigationBarBackgroundColor": "#4ad975",
+          "navigationBarTextStyle": "white",
+          "componentPlaceholder": {
+            "star": "view"
+          }
+        }
+      },
+      {
+        "path": "login/switch-role",
+        "name": "switchRole",
+        "aliasPath": "/",
+        "style": {
+          "navigationBarTitleText": "选择身份",
+          "navigationBarBackgroundColor": "#4ad975",
+          "navigationBarTextStyle": "white",
+          "componentPlaceholder": {
+            "star": "view"
+          }
+        }
+      },
+      {
+        "path": "login/bind-phone",
+        "name": "bindPhone",
+        "style": {
+          "navigationBarTitleText": "绑定手机号码",
+          "navigationBarBackgroundColor": "#4ad975",
+          "navigationBarTextStyle": "white",
+          "componentPlaceholder": {
+            "star": "view"
+          }
+        }
+      },
+      {
+        "path": "login/user-agreement/child-privacy",
+        "name": "childPrivacy",
+        "style": {
+          "navigationBarTitleText": "",
+          "navigationBarBackgroundColor": "#4ad975",
+          "navigationBarTextStyle": "white",
+          "componentPlaceholder": {
+            "star": "view"
+          }
+        }
+      },
+      {
+        "path": "activity/Kaifeng/act-intro",
+        "name": "actIntro",
+        "style": {
+          "navigationBarTitleText": "活动",
+          "navigationBarBackgroundColor": "#4ad975",
+          "navigationBarTextStyle": "white",
+          "componentPlaceholder": {
+            "star": "view"
+          }
+        }
+      },
+      {
+        "path": "activity/Kaifeng/activity-info-list",
+        "name": "actInfoList",
+        "style": {
+          "navigationBarTitleText": "活动咨询",
+          "navigationBarBackgroundColor": "#4ad975",
+          "navigationBarTextStyle": "white",
+          "enablePullDownRefresh": true,
+          "componentPlaceholder": {
+            "star": "view"
+          }
+        }
+      },
+      {
+        "path": "select-users/select-users",
+        "name": "CommonSelectUsers",
+        "style": {
+          "navigationBarTitleText": "选择联系人",
+          "navigationBarBackgroundColor": "#4ad975",
+          "navigationBarTextStyle": "white",
+          "enablePullDownRefresh": true
+        }
+      },
+      {
+        "path": "weChatFileSelect/index",
+        "name": "weChatFileSelect",
+        "aliasPath": "/",
+        "style": {
+          "navigationBarTitleText": "选取文件",
+          "navigationBarBackgroundColor": "#4ad975",
+          "navigationBarTextStyle": "white",
+          "enablePullDownRefresh": false
+        },
+        // #ifdef MP-WEIXIN
+        "independent": true
+        // #endif
+      },
+      {
+        "path": "web-to-h5/web-to-h5",
+        "name": "WebToH5",
+        "style": {
+          "navigationBarTitleText": "迎新",
+          "navigationBarBackgroundColor": "#FFFFFF",
+          "navigationBarTextStyle": "black"
+        }
+      },
+      {
+        "path": "sign-up/sign-up",
+        "name": "signUp",
+        "style": {
+          "navigationBarTitleText": "签名",
+          "navigationBarBackgroundColor": "#FFFFFF",
+          "navigationBarTextStyle": "black"
+        }
+      }
+    ]
+  },
+  "mainPath": "../../pages.json",
+  "copyMainPath": "../../pages-copy.json",
+  "envDevelopmentPath": "../../../.env.development"
+}

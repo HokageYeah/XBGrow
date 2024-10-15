@@ -1,0 +1,159 @@
+{
+  "easycom": {
+    "autoscan": true,
+    "custom": {
+      "^uni-(.*)": "@/uni-module-common/components/uni-$1/uni-$1.vue",
+      "^xxt-(.*)": "@/uni-module-common/components/xxt-components/xxt-$1/xxt-$1.vue",
+      "^tui-(.*)": "@/uni-module-common/components/thorui/tui-$1/tui-$1.vue"
+    }
+  },
+  "pages": [
+    {
+      "path": "pages/template-index/template-index",
+      "name": "templateIndex",
+      "aliasPath": "/",
+      "style": {
+        "navigationBarTitleText": "首页uni-app",
+        "navigationBarBackgroundColor": "#FFFFFF",
+        "navigationBarTextStyle": "black"
+      }
+    },
+    {
+      "path": "pages/template-index/template-test",
+      "name": "templateTest",
+      "aliasPath": "/",
+      "style": {
+        "navigationBarTitleText": "测试uni-app",
+        "navigationBarBackgroundColor": "#FFFFFF",
+        "navigationBarTextStyle": "black"
+      }
+    }
+  ],
+  "subPackages": [
+    {
+      "root": "uni_modules/uni-module-public",
+      "name": "xxtUniModulePublic",
+      "pages": [
+        {
+          "path": "login/login",
+          "name": "login",
+          "aliasPath": "/",
+          "style": {
+            "navigationBarTitleText": "登录",
+            "navigationBarBackgroundColor": "#4ad975",
+            "navigationBarTextStyle": "white",
+            "componentPlaceholder": {
+              "star": "view"
+            }
+          }
+        },
+        {
+          "path": "login/switch-role",
+          "name": "switchRole",
+          "aliasPath": "/",
+          "style": {
+            "navigationBarTitleText": "选择身份",
+            "navigationBarBackgroundColor": "#4ad975",
+            "navigationBarTextStyle": "white",
+            "componentPlaceholder": {
+              "star": "view"
+            }
+          }
+        },
+        {
+          "path": "login/bind-phone",
+          "name": "bindPhone",
+          "style": {
+            "navigationBarTitleText": "绑定手机号码",
+            "navigationBarBackgroundColor": "#4ad975",
+            "navigationBarTextStyle": "white",
+            "componentPlaceholder": {
+              "star": "view"
+            }
+          }
+        },
+        {
+          "path": "login/user-agreement/child-privacy",
+          "name": "childPrivacy",
+          "style": {
+            "navigationBarTitleText": "",
+            "navigationBarBackgroundColor": "#4ad975",
+            "navigationBarTextStyle": "white",
+            "componentPlaceholder": {
+              "star": "view"
+            }
+          }
+        },
+        {
+          "path": "activity/Kaifeng/act-intro",
+          "name": "actIntro",
+          "style": {
+            "navigationBarTitleText": "活动",
+            "navigationBarBackgroundColor": "#4ad975",
+            "navigationBarTextStyle": "white",
+            "componentPlaceholder": {
+              "star": "view"
+            }
+          }
+        },
+        {
+          "path": "activity/Kaifeng/activity-info-list",
+          "name": "actInfoList",
+          "style": {
+            "navigationBarTitleText": "活动咨询",
+            "navigationBarBackgroundColor": "#4ad975",
+            "navigationBarTextStyle": "white",
+            "enablePullDownRefresh": true,
+            "componentPlaceholder": {
+              "star": "view"
+            }
+          }
+        },
+        {
+          "path": "select-users/select-users",
+          "name": "CommonSelectUsers",
+          "style": {
+            "navigationBarTitleText": "选择联系人",
+            "navigationBarBackgroundColor": "#4ad975",
+            "navigationBarTextStyle": "white",
+            "enablePullDownRefresh": true
+          }
+        },
+        {
+          "path": "weChatFileSelect/index",
+          "name": "weChatFileSelect",
+          "aliasPath": "/",
+          "style": {
+            "navigationBarTitleText": "选取文件",
+            "navigationBarBackgroundColor": "#4ad975",
+            "navigationBarTextStyle": "white",
+            "enablePullDownRefresh": false
+          },
+          // #ifdef MP-WEIXIN
+          "independent": true
+          // #endif
+        }
+      ]
+    }
+  ],
+  "globalStyle": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "uni-app",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  },
+  "tabBar": {
+    "selectedColor": "#4AD975",
+    "color": "#999999",
+    "list": [
+      {
+        "pagePath": "pages/template-index/template-index",
+        "text": "首页uni"
+      },
+      {
+        "pagePath": "pages/template-index/template-test",
+        "text": "测试uni"
+      }
+    ]
+  }
+}

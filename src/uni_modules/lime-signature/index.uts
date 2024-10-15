@@ -1,0 +1,37 @@
+
+export type LSignatureToFileSuccess = {
+	tempFilePath: string
+	isEmpty: boolean
+}
+export type LSignatureToFileSuccessCallback = (res : LSignatureToFileSuccess) => void
+export type LSignatureToFileFailCallback = (res : TakeSnapshotFail) => void
+export type LSignatureToFileCompleteCallback = (res : any) => void
+
+export type  LSignatureToTempFilePathOptions = {
+	success?: LSignatureToFileSuccessCallback
+	fail?: 	  LSignatureToFileFailCallback
+	complete?: LSignatureToFileCompleteCallback
+	format?: string
+}
+
+export type LSignatureOptions = {
+	penColor : string
+	// backgroundColor : string
+	openSmooth : boolean
+	disableScroll : boolean
+	disabled : boolean
+	penSize : number
+	minLineWidth : number
+	maxLineWidth : number
+	minSpeed : number
+	maxWidthDiffRate : number
+	maxHistoryLength : number
+}
+export type Point = {
+	x: number
+	y: number
+	c?: string
+	w?: number
+}
+
+export type Line = Point[]

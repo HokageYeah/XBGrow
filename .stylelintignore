@@ -1,0 +1,11 @@
+/dist/*
+/public/*
+public/*
+/src/components/common/*
+/src/components/thorui/*
+/src/uni_modules/lime-signature/*
+/src/uni_modules/lime-shared/*
+/src/uni_modules/lime-shrink/*
+/src/static/*
+/src/style/*
+/src/uni.scss

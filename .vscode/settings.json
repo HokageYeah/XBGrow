@@ -1,0 +1,19 @@
+{
+  // 保存时自动格式化
+  "editor.formatOnSave": true,
+  // 保存时的动作设置
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  },
+  // 默认格式化插件
+  "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+  "stylelint.validate": [
+    "css",
+    "scss",
+    "vue",
+    "html"
+  ],
+  "[vue]": {
+    // "editor.defaultFormatter": "Vue.volar"
+  },
+}
