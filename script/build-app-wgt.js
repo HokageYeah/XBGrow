@@ -1,9 +1,10 @@
 const { execSync } = require('node:child_process');
 const { resolve } = require('node:path');
-const { readFileSync, existsSync, unlinkSync } = require('node:fs');
+const { readFileSync, existsSync, unlinkSync, createWriteStream } = require('node:fs');
+const archiver = require('archiver');
 const envsParams = process.argv.slice(2);
 console.log('envsParams---', envsParams);
-const projectConfigKeyAry = ['szjx', 'xzx-reading', 'xxt'];
+const projectConfigKeyAry = ['szjx', 'xzx-reading', 'xxt', 'circle'];
 const envsPopParams = envsParams.pop();
 if (!projectConfigKeyAry.includes(envsPopParams)) {
   console.log(`请传入正确的参数，参数必须是${projectConfigKeyAry.toString()}其中之一 ❌❌❌`);
@@ -50,18 +51,42 @@ if (existsSync(distAppWgtPath)) {
   }
 }
 
-// 保证每次运行的时候wgt包都是最新的后在开始打包
-const zipPath = resolve(__dirname, `../dist/build/app`);
-const zipCommand = `zip -r ../${appId}${test}.wgt *`;
-console.log(`开始构建wgt压缩包 🚀🚀🚀...`);
-try {
-  execSync(zipCommand, {
-    cwd: zipPath,
-    stdio: 'inherit' // 将标准输入重定向到 /dev/null
-  });
+// 这块代码是在Mac上打包用的，因为没有兼容windows系统，所有采用下方打包。
+// // 保证每次运行的时候wgt包都是最新的后在开始打包
+// const zipPath = resolve(__dirname, `../dist/build/app`);
+// const zipCommand = `zip -r ../${appId}${test}.wgt *`;
+// console.log(`开始构建wgt压缩包 🚀🚀🚀...`);
+// try {
+//   execSync(zipCommand, {
+//     cwd: zipPath,
+//     stdio: 'inherit' // 将标准输入重定向到 /dev/null
+//   });
 
-  console.log('wgt包构建成功 🎉🎉🎉，wgt包地址：', distAppWgtPath);
-} catch (error) {
-  console.log('wgt包构建失败❌❌❌，失败原因：', error);
+//   console.log('wgt包构建成功 🎉🎉🎉，wgt包地址：', distAppWgtPath);
+// } catch (error) {
+//   console.log('wgt包构建失败❌❌❌，失败原因：', error);
+//   process.exit();
+// }
+
+// 保证每次运行的时候wgt包都是最新的后在开始打包
+// 兼容windows系统和Mac系统
+// 创建输出流，输出为 .wgt 文件
+console.log(`开始构建wgt压缩包 🚀🚀🚀...`);
+const zipPath = resolve(__dirname, `../dist/build/app`);
+const output = createWriteStream(distAppWgtPath);
+const archive = archiver('zip', { zlib: { level: 9 } }); // 使用最强压缩级别
+// 处理输出完成事件
+output.on('close', () => {
+  console.log('最新构建脚本：wgt包构建成功 🎉🎉🎉，wgt包地址：', distAppWgtPath);
+});
+// 处理错误事件
+archive.on('error', (err) => {
+  console.error('最新构建脚本：wgt包构建失败❌❌❌，失败原因：', err);
   process.exit();
-}
+});
+// 将输出流管道到归档
+archive.pipe(output);
+// 添加要压缩的文件或文件夹
+archive.directory(zipPath, false);
+// 写入文件
+archive.finalize();
