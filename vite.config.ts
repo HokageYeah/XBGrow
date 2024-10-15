@@ -60,7 +60,7 @@ export default ({ command, mode }: ConfigEnv): UserConfigExport => {
   const root = process.cwd();
   const env = loadEnv(mode, root);
   // 获取命令行后面的参数
-  const envsParams = process.argv.slice(2).pop() as string;
+  const envsParams = 'szjx' || (process.argv.slice(2).pop() as string);
   if (!projectConfigKeyAry.includes(envsParams)) {
     console.log(`❌❌❌请传入正确的参数，参数必须是${projectConfigKeyAry.toString()}其中之一`);
     process.exit();

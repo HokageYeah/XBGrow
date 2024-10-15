@@ -131,6 +131,7 @@ export default {
 /* #ifdef MP-WEIXIN */
 @import url('@/style/thorui-extend.wxss');
 @import url('@/static/css/xxt-fonts/iconfont.wxss');
+/* #endif */
 /* @import './static/css/xxt-fonts/iconfont.css'; */
 /* @import './static/style/thorui-extend.css'; */
 </style>
