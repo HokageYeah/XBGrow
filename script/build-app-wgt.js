@@ -4,7 +4,7 @@ const { readFileSync, existsSync, unlinkSync, createWriteStream } = require('nod
 const archiver = require('archiver');
 const envsParams = process.argv.slice(2);
 console.log('envsParams---', envsParams);
-const projectConfigKeyAry = ['szjx', 'xzx-reading', 'xxt', 'circle'];
+const projectConfigKeyAry = ['szjx', 'xzx-reading', 'xxt', 'circle', 'xbg'];
 const envsPopParams = envsParams.pop();
 if (!projectConfigKeyAry.includes(envsPopParams)) {
   console.log(`请传入正确的参数，参数必须是${projectConfigKeyAry.toString()}其中之一 ❌❌❌`);
